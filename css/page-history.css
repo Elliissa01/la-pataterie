@@ -5,6 +5,25 @@
 @import url('general.css');
 
 /*Section Histoire*/
+
+/* .history-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+.history-container img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.history-text {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+} */
+
 /* .history {
     display: flex;
     flex-direction: column;

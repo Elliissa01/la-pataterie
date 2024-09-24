@@ -45,7 +45,7 @@
 /*******************/
 
 /*Smartphones*/
-@media(max-width: 480px) {
+@media(max-width: 500px) {
 
     .banner {
         height: 150px;
