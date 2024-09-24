@@ -12,6 +12,8 @@ nav {
     align-items: center;
     padding: 8px 120px 8px 120px;
     background-color: #fff;
+    /*Permet de mettre la navbar au premier plan*/
+    z-index: 10;
 }
 
 .logo {

@@ -1,0 +1,45 @@
+/***************************/
+/*Style de la page Histoire*/
+/***************************/
+
+@import url('general.css');
+
+/*Section Histoire*/
+/* .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.history-container {
+    width: 70%;
+    height: auto;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    border: 3px solid #111;
+    padding: 12px;
+}
+
+.history-text {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.history-container img {
+    flex-grow: 1;
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+} */

@@ -39,3 +39,24 @@
     height: 100%;
     object-fit: cover;
 }
+
+/*******************/
+/*Responsive design*/
+/*******************/
+
+/*Smartphones*/
+@media(max-width: 480px) {
+
+    .banner {
+        height: 150px;
+    }
+
+    .text-banner h1 {
+        font-size: 2.1rem;
+    }
+
+    .text-banner h3 {
+        font-size: 1.2rem;
+    }
+
+}
