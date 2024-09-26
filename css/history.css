@@ -1,6 +1,6 @@
-/***************************/
-/*Style de la page Histoire*/
-/***************************/
+/*****************************/
+/*Style de la partie Histoire*/
+/*****************************/
 
 @import url('general.css');
 
@@ -18,7 +18,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    /* align-self: center; */
 }
 
 .history-text {
