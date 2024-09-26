@@ -9,15 +9,23 @@
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .history-container {
-    width: 80%;
-    max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin: auto;
+    gap: 25px;
+    /* align-self: center; */
+}
+
+.history-text {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .history-img {
@@ -30,17 +38,6 @@
     object-fit: cover;
 }
 
-.history-text {
-    display: flex;
-    align-items: center;
-}
-
-.history-story p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
 /*******************/
 /*Responsive design*/
 /*******************/
@@ -49,7 +46,6 @@
 @media (max-width: 768px) {
 
     .history-container {
-        width: 90%;
         grid-template-columns: 1fr;
         gap: 10px;
     }

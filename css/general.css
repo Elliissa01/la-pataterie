@@ -8,3 +8,13 @@
 body {
     background-color: #fff;
 }
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
