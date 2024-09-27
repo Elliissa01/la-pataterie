@@ -11,7 +11,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 8px 120px 8px 120px;
-    background-color: #fff;
+    background-color: var(--white);
     /*Permet de mettre la navbar au premier plan*/
     z-index: 10;
 }
@@ -30,7 +30,6 @@ nav {
     margin: 0;
     margin-left: 10px;
     color: #111;
-    font-family: "Roboto", sans-serif;
     font-size: 1.4rem;
 }
 
@@ -46,7 +45,6 @@ nav {
     padding: 16px 16px;
     color: #111;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
 }

@@ -6,7 +6,6 @@
 
 /*Section Histoire*/
 .history {
-    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -23,7 +22,6 @@
 .history-text {
     display: flex;
     align-items: center;
-    font-size: 1rem;
     line-height: 1.5;
 }
 
