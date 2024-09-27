@@ -8,9 +8,6 @@
 .history {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .history-container {

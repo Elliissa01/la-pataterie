@@ -21,6 +21,12 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
 /*Tablettes et smartphones*/
 @media(max-width: 768px) {
 
