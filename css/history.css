@@ -4,6 +4,48 @@
 
 @import url('general.css');
 
+/*Section Statistiques*/
+.stats {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.stats-container {
+    margin: 10px 5px;
+    border: 4px solid var(--black);
+    min-width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.stats-container h4 {
+    margin: 5px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*Cacher une partie de la bordure du haut*/
+    background-color: var(--white);
+    padding: 0 10px;
+}
+
+.counter {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--yellow);
+    margin-top: 30px;
+}
+
 /*Section Histoire*/
 .history {
     display: flex;
@@ -37,11 +79,45 @@
 /*******************/
 
 /*Tablettes et smartphones*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
+    /*Section Statistiques*/
+    .stats-container {
+        border: 3px solid var(--black);
+        min-width: 150px;
+    }
+
+    .stats-container h4 {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        top: -15px;
+    }
+
+    .counter {
+        font-weight: 400;
+    }
+
+    /*Section Histoire*/
     .history-container {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+}
+
+/*Pour des statistiques responsives*/
+@media only screen and (max-width: 600px) {
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-container {
+        border: 3px solid var(--black);
+        width: 70%;
     }
 
 }
