@@ -26,6 +26,10 @@ h1 {
     margin-bottom: 16px;
 }
 
+h4 {
+    font-family: "Lilita One", sans-serif;
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
