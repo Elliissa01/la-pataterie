@@ -42,6 +42,9 @@ h4 {
     scroll-margin-top: 50px;
 }
 
+/*******************/
+/*Responsive design*/
+/*******************/
 
 /*Tablettes et smartphones*/
 @media only screen and (max-width: 768px) {
