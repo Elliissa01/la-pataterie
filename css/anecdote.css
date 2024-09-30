@@ -13,17 +13,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(214, 199, 157, 0.3);
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    background: rgba(218, 186, 100, 0.3);
+    border: 1px solid rgba(128, 94, 0, 0.4);
     border-radius: 2px;
-    padding: 20px;
+    padding: 15px;
     width: 250px;
+}
+
+.card-content {
+    position: relative;
+    height: 250px;
 }
 
 .card-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 2px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.card-text:hover {
+    opacity: 1;
+}
+
+.card-text p {
+    margin: 0 25px;
+    color: var(--white);
+    text-align: center;
 }
 
 .card-title {
