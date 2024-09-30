@@ -75,21 +75,22 @@ nav {
 /*Grands écrans (avec souris)*/
 @media only screen and (min-width: 1025px) {
 
+    /*Pour l'animation*/
     .nav-links .nav-cta-button {
         background-color: rgba(255, 230, 0, 0.3);
-        /*Pour l'animation*/
         position: relative;
         overflow: hidden;
     }
 
+    /*Pour l'animation*/
     .nav-cta-button span {
         /*Pour mettre le texte au premier plan*/
         position: relative;
         z-index: 1;
     }
 
+    /*Pour l'animation*/
     .nav-cta-button::before {
-        /*Pour l'animation*/
         content: "";
         position: absolute;
         background-color: var(--yellow);
@@ -97,12 +98,13 @@ nav {
         height: 0;
         border-radius: 50%;
         transition: width .5s, height 0.5s;
-        /*Pour centrer un élément l'animation*/
+        /*Pour centrer l'animation*/
         left: var(--xPos);
         top: var(--yPos);
         transform: translate(-50%, -50%);
     }
 
+    /*Pour l'animation*/
     .nav-cta-button:hover::before {
         width: 200px;
         height: 200px;

@@ -15,7 +15,7 @@ counterElements.forEach(counterEl => {
         //Mise à jour des compteurs.
         if(current < ceil) {
             counterEl.innerText = current;
-            setTimeout(incrementCounter, 40);
+            setTimeout(incrementCounter, 10);
         } else {
             counterEl.innerText = ceil;
         }

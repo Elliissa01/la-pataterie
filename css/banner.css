@@ -38,11 +38,29 @@
 /*Responsive design*/
 /*******************/
 
-/*Smartphones*/
+/*Laptops (petits écrans)*/
+@media only screen and (max-width: 1024px) {
+
+    .banner {
+        background-size: 200%;
+    }
+
+}
+
+/*Tablettes et smartphones*/
 @media only screen and (max-width: 768px) {
 
     .banner {
         height: 200px;
+    }
+
+}
+
+/*Smartphones*/
+@media only screen and (max-width: 480px) {
+
+    .banner {
+        background-size: 300%;
     }
 
 }
