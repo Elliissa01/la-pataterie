@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/anecdote.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <!--Barre de navigation-->
@@ -102,63 +104,99 @@
                     <h1>ANECDOTES</h1>
                 </div>
                 <!--Carrousel-->
-                <div class="anecdote-container">
+                <div class="anecdote-container swiper">
                     <div class="slider-wrapper">
-                        <div class="card-list">
+                        <div class="card-list swiper-wrapper">
                             <!--Slide #1-->
-                            <div class="card-item">
-                                <div class="card-content">
-                                    <img src="img/slider-1.jpg" alt="Patate douce" class="card-image">
-                                    <div class="card-text">
-                                        <p>
-                                            Une patate ... douce ! <br> Ça existe aussi !
-                                            Sucrée, elle se mange sous forme de purée, de gratin et de frites mais, aussi, sous forme de desserts.
-                                        </p>
+                            <div class="card swiper-slide">
+                                <div class="card-container">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="img/slider-1.jpg" alt="Patate douce">
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Une patate ... douce ! Ça existe aussi !
+                                                Sucrée, elle se mange sous forme de purée, de gratin et de frites mais, aussi, sous forme de desserts.
+                                            </p>
+                                        </div>
                                     </div>
+                                    <h4 class="card-title">Patate sucrée</h4>
                                 </div>
-                                <h4 class="card-title">Patate sucrée</h4>
                             </div>
                             <!--Slide #2-->
-                            <div class="card-item">
-                                <div class="card-content">
-                                    <img src="img/slider-2.jpg" alt="Pomme de terre violette" class="card-image">
-                                    <div class="card-text">
-                                        <p>
-                                            Il existe des pommes de terre violettes ! Eh oui ! <br>
-                                            Vitelotte, Bleue d'Artois ou Violine de Borée, ce sont toutes des variétés violettes et anciennes.
-                                        </p>
+                            <div class="card swiper-slide">
+                                <div class="card-container">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="img/slider-2.jpg" alt="Pomme de terre violette">
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Il existe des pommes de terre violettes ! Eh oui !
+                                                Vitelotte, Bleue d'Artois ou Violine de Borée, ce sont toutes des variétés violettes et anciennes.
+                                            </p>
+                                        </div>
                                     </div>
+                                    <h4 class="card-title">Couleur violette</h4>
                                 </div>
-                                <h4 class="card-title">Couleur violette</h4>
                             </div>
                             <!--Slide #3-->
-                            <div class="card-item">
-                                <div class="card-content">
-                                    <img src="img/slider-3.jpg" alt="Fleurs de pomme de terre" class="card-image">
-                                    <div class="card-text">
-                                        <p>
-                                            Marie-Antoinette, l'épouse du roi Louis XVI, aimait porter les fleurs blanches de pommes de terre dans ses cheveux.
-                                        </p>
+                            <div class="card swiper-slide">
+                                <div class="card-container">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="img/slider-3.jpg" alt="Fleurs de pomme de terre">
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Marie-Antoinette, l'épouse du roi Louis XVI, aimait porter les fleurs blanches de pommes de terre dans ses cheveux.
+                                            </p>
+                                        </div>
                                     </div>
+                                    <h4 class="card-title">Coiffure d'antan</h4>
                                 </div>
-                                <h4 class="card-title">Coiffure d'antan</h4>
                             </div>
                             <!--Slide #4-->
-                            <div class="card-item">
-                                <div class="card-content">
-                                    <img src="img/slider-4.jpg" alt="Chips de pomme de terre" class="card-image">
-                                    <div class="card-text">
-                                        <p>
-                                            La chips de pomme de terre a été inventée par un cuisinier énervé contre
-                                            un client, qui se plaignait de l'épaisseur des pommes de terre sautées.
-                                        </p>
+                            <div class="card swiper-slide">
+                                <div class="card-container">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="img/slider-4.jpg" alt="Chips de pomme de terre">
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                La chips de pomme de terre a été inventée par un cuisinier énervé contre
+                                                un client, qui se plaignait de l'épaisseur des pommes de terre sautées.
+                                            </p>
+                                        </div>
                                     </div>
+                                    <h4 class="card-title">Chips</h4>
                                 </div>
-                                <h4 class="card-title">Chips</h4>
                             </div>
-                            
+                            <!--Slide #5-->
+                            <div class="card swiper-slide">
+                                <div class="card-container">
+                                    <div class="card-content">
+                                        <div class="card-image">
+                                            <img src="img/slider-4.jpg" alt="Chips de pomme de terre">
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                La chips de pomme de terre a été inventée par un cuisinier énervé contre
+                                                un client, qui se plaignait de l'épaisseur des pommes de terre sautées.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <h4 class="card-title">Chips</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--Pagination et navigation-->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
             <!--Section Gastronomie-->
@@ -168,7 +206,10 @@
         </div>
     </div>
 </body>
+<!--Script Swiper-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!--JavaScript-->
 <script src="./js/navigation.js"></script>
 <script src="./js/history.js"></script>
+<script src="./js/anecdote.js"></script>
 </html>
