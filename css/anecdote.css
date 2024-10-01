@@ -4,12 +4,17 @@
 
 @import url('general.css');
 
+.anecdote {
+    margin-bottom: 50px;
+}
+
 /*CSS Cartes*/
 
 .anecdote-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px auto;
 }
 
 .slider-wrapper {
