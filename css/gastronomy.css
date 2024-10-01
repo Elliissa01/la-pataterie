@@ -1,0 +1,91 @@
+/********************************/
+/*Style de la partie Gastronomie*/
+/********************************/
+
+@import url('general.css');
+
+.gastronomy {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu {
+    display: grid;
+    justify-items: center;
+    gap: 3rem 2rem;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 400px;
+}
+
+.item-photo {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.item-infos header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--yellow);
+}
+
+.item-infos h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.item-description {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+/*******************/
+/*Responsive design*/
+/*******************/
+
+@media only screen and (min-width: 350px) {
+
+    .menu {
+        gap: 2rem;
+    }
+
+    .menu-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem 2rem;
+        max-width: 300px;
+    }
+
+    .item-photo {
+        height: 180px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 650px) {
+
+    .menu-item {
+        grid-template-columns: auto 1fr;
+        gap: 0 2rem;
+        max-width: 700px;
+    }
+
+    .item-photo {
+        height: 150px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .menu {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
