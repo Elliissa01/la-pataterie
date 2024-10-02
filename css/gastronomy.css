@@ -44,6 +44,20 @@
     padding-top: 1rem;
 }
 
+.item-nationality {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-size: 0.95rem;
+}
+
+.item-country {
+    margin: 0;
+}
+
 /*******************/
 /*Responsive design*/
 /*******************/
