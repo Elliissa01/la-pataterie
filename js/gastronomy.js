@@ -21,7 +21,7 @@ const food = [
         photo: "../img/menu-3.jpg",
         title: "Hasselbackspotatis",
         category: "à côté",
-        description: `Les hasselbackspotatis sont des pommes de terre coupées en fines tranches à mi-hauteur, puis garnies de beurre, de chapelure et d'amandes avant d'être cuites.`,
+        description: `Ce sont des pommes de terre coupées en fines tranches à mi-hauteur, puis garnies de beurre, de chapelure et d'amandes avant d'être cuites.`,
         country: "Suède",
     },
     {
@@ -53,7 +53,7 @@ const food = [
         photo: "../img/menu-7.jpg",
         title: "Tartiflette",
         category: "plat",
-        description: `La tartiflette est une recette à base de gratin de pommes de terre, d'oignons, de lardons et de crème fraîche, le tout gratiné au reblochon (fromage de Savoie).`,
+        description: `La tartiflette est une recette à base de gratin de pommes de terre, d'oignons, de lardons et de crème fraîche, le tout gratiné au reblochon.`,
         country: "France",
     },
     {

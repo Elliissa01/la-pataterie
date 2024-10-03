@@ -77,7 +77,7 @@ nav {
 
     /*Pour l'animation*/
     .nav-links .nav-cta-button {
-        background-color: rgba(255, 230, 0, 0.3);
+        background-color: var(--lightYellow);
         position: relative;
         overflow: hidden;
     }

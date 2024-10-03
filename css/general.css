@@ -7,11 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Lilita+One&display=swap');
 /*font-family: "Lilita One", sans-serif;*/
 
-/*Variables de couleurs*/
+/*Variables globales*/
 :root {
     --white: #f2f2f2;
     --black: #111111;
     --yellow: #ce7b00;
+    --lightYellow: rgba(255, 230, 0, 0.3);
+    --brown: rgb(126, 67, 0);
+    --radiusImg: 2px;
 }
 
 body {
