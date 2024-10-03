@@ -9,6 +9,8 @@
 }
 
 /*Boutons de filtre*/
+.btn-menu-container {}
+
 .btn-menu-container button {
     text-transform: uppercase;
 }
