@@ -34,7 +34,7 @@
     left: 50%;
     transform: translateX(-50%);
     /*Cacher une partie de la bordure du haut*/
-    background-color: var(--white);
+    background: var(--white);
     padding: 0 10px;
 }
 

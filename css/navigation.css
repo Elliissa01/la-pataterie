@@ -29,6 +29,9 @@ nav {
 .logo h3 {
     margin: 0;
     margin-left: 10px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 500;
+    color: var(--black);
     font-size: 1.4rem;
 }
 
@@ -51,8 +54,9 @@ nav {
 .nav-links .nav-cta-button {
     padding: 10px 22px;
     margin-left: 15px;
-    border: var(--yellow) solid 2px;
-    border-radius: 20px;
+    border: 2px solid var(--brown);
+    border-radius: var(--radiusImg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger {
