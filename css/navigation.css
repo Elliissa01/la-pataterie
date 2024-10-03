@@ -29,7 +29,7 @@ nav {
 .logo h3 {
     margin: 0;
     margin-left: 10px;
-    font-family: "Lilita One", sans-serif;
+    font-family: var(--font-2);
     font-weight: 500;
     color: var(--black);
     font-size: 1.4rem;

@@ -15,6 +15,8 @@
     --lightYellow: rgba(255, 230, 0, 0.3);
     --brown: rgb(126, 67, 0);
     --radiusImg: 2px;
+    --font-1: "Roboto", sans-serif;
+    --font-2: "Lilita One", sans-serif;
 }
 
 * {
@@ -23,7 +25,7 @@
 
 body {
     background-color: var(--white);
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-1);
     color: var(--black);
 }
 
@@ -34,7 +36,7 @@ h1 {
 }
 
 h4 {
-    font-family: "Lilita One", sans-serif;
+    font-family: var(--font-2);
 }
 
 .container {
@@ -43,7 +45,10 @@ h4 {
     margin: auto;
 }
 
-#section-history,
+#section-history {
+    scroll-margin-top: 38px;
+}
+
 #section-anecdote,
 #section-gastronomy {
     scroll-margin-top: 70px;

@@ -39,7 +39,7 @@
 }
 
 .counter {
-    font-family: "Lilita One", sans-serif;
+    font-family: var(--font-2);
     font-weight: 600;
     font-size: 2rem;
     color: var(--yellow);
