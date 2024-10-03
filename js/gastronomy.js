@@ -66,44 +66,94 @@ const food = [
     },
 ];
 const menu = document.querySelector(".menu");
-const filterButtons = document.querySelectorAll(".btn-menu-filter");
+const btnMenuContainer = document.querySelector(".btn-menu-container");
 
-//Affichage des repas au chargement de la page.
+//Au chargement de la page.
 window.addEventListener("DOMContentLoaded", function() {
+    
+    //Affichage des repas.
     displayFood(food);
-});
+    
+    //Extraction d'une liste de catégories uniques.
+    const categories = food.reduce(
+        function(values, item) {
+            if(!values.includes(item.category)) {
+                values.push(item.category);
+            }
+            return values;
+        }, ["tout"]
+    );
 
-//Filtre des repas.
-filterButtons.forEach(function(btn) {
-    btn.addEventListener("click", function(e) {
-        const category = e.currentTarget.dataset.category;
-        const foodCategory = food.filter(function(item) {
-            return item;
-        });
-        console.log(foodCategory);
-    })
+    //Affichage des boutons de filtre.
+    displayButtons(categories);
+
 });
 
 /*Permet l'affichage des repas.*/
 function displayFood(foodItem) {
+    
     //Retourne un tableau contenant les repas à afficher.
-    let displayMenu = foodItem.map(function(item) {
-        return `<article class="menu-item">
-                        <img src=${item.photo} class="item-photo" alt=${item.title}>
-                        <div class="item-infos">
-                            <header>
-                                <h4>${item.title}</h4>
-                            </header>
-                            <p class="item-description">${item.description}</p>
-                            <div class="item-nationality">
-                                <i class="fa-solid fa-earth-americas"></i>
-                                <p class="item-country">${item.country}</p>
-                            </div> 
-                        </div>
-                    </article>`;
-    });
-    //Conversion en chaîne de caractères.
+    let displayMenu = foodItem.map(
+        function(item) {
+            return `<article class="menu-item">
+                            <img src=${item.photo} class="item-photo" alt=${item.title}>
+                            <div class="item-infos">
+                                <header>
+                                    <h4>${item.title}</h4>
+                                </header>
+                                <p class="item-description">${item.description}</p>
+                                <div class="item-nationality">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    <p class="item-country">${item.country}</p>
+                                </div> 
+                            </div>
+                        </article>`;
+        }
+    );
+    
+    //Conversion en chaîne de caractères et insertion dans le DOM.
     displayMenu = displayMenu.join("");
-    //Insertion dans le DOM.
     menu.innerHTML = displayMenu;
+
+}
+
+/*Permet l'affichage des boutons de filtre.*/
+function displayButtons(categories) {
+    
+    //Retourne un tableau contenant les boutons à afficher.
+    let categoriesButtons = categories.map(
+        function(category) {
+            return `<button class="btn-menu-filter" type="button" data-category="${category}">${category}</button>`;
+        }
+    );
+    
+    //Conversion en chaîne de caractères et insertion dans le DOM.
+    categoriesButtons = categoriesButtons.join("");
+    btnMenuContainer.innerHTML = categoriesButtons;
+
+    //Ajout du filtrage.
+    const filterButtons = document.querySelectorAll(".btn-menu-filter");
+    filterCategory(filterButtons);
+
+}
+
+/*Permet de filtrer les repas en fonction des catégories.*/
+function filterCategory(filterButtons) {
+
+    filterButtons.forEach(function(btn) {
+        btn.addEventListener("click", function(e) {
+            const category = e.currentTarget.dataset.category;
+            const foodCategory = food.filter(function(item) {
+                if(item.category === category) {
+                    return item;
+                }
+            });
+            if(category === "tout") {
+                displayFood(food);
+            } else {
+                displayFood(foodCategory);
+            }
+        });
+    });
+
 }

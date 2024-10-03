@@ -8,6 +8,12 @@
     margin-bottom: 50px;
 }
 
+/*Boutons de filtre*/
+.btn-menu-container button {
+    text-transform: uppercase;
+}
+
+/*Repas*/
 .menu {
     display: grid;
     justify-items: center;
