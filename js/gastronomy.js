@@ -58,7 +58,7 @@ const food = [
     },
     {
         id: 8,
-        photo: "../img/menu-68.jpg",
+        photo: "../img/menu-8.jpg",
         title: "Gattò di patate",
         category: "plat",
         description: `Ce gâteau salé est constitué d'un mélange de pommes de terre en purée, de salami et de fromage.`,
