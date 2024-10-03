@@ -1,5 +1,5 @@
 # la-pataterie 🥔
-Site web dédié à la pomme de terre, utilisant HTML, CSS et JavaScript.
+Site web dédié à la pomme de terre utilisant HTML, CSS et JavaScript.
 
 ## Aperçu
 ![site-patate-isa](https://github.com/user-attachments/assets/e2bca27a-40c8-4b9d-a96a-6f8b19c24769)
