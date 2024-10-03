@@ -56,7 +56,6 @@ nav {
     margin-left: 15px;
     border: 2px solid var(--brown);
     border-radius: var(--radiusImg);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger {
@@ -81,9 +80,9 @@ nav {
 
     /*Pour l'animation*/
     .nav-links .nav-cta-button {
-        background-color: var(--lightYellow);
         position: relative;
         overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
 
     /*Pour l'animation*/
@@ -121,6 +120,15 @@ nav {
 
     nav {
         padding: 8px 50px 8px 50px;
+    }
+
+}
+
+/*Grandes tablettes et écrans larges*/
+@media only screen and (min-width: 769px) {
+
+    .nav-links .nav-cta-button {
+        background-color: var(--lightYellow);
     }
 
 }
