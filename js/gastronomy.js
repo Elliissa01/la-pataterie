@@ -93,27 +93,25 @@ window.addEventListener("DOMContentLoaded", function() {
 function displayFood(foodItem) {
     
     //Retourne un tableau contenant les repas à afficher.
-    let displayMenu = foodItem.map(
-        function(item) {
-            return `<article class="menu-item">
-                            <img src=${item.photo} class="item-photo" alt=${item.title}>
-                            <div class="item-infos">
-                                <header>
-                                    <h4>${item.title}</h4>
-                                </header>
-                                <p class="item-description">${item.description}</p>
-                                <div class="item-nationality">
-                                    <i class="fa-solid fa-earth-americas"></i>
-                                    <p class="item-country">${item.country}</p>
-                                </div> 
-                            </div>
-                        </article>`;
-        }
-    );
+    let arrayMeals = foodItem.map(function(item) {
+        return `<article class="menu-item">
+                        <img src=${item.photo} class="item-photo" alt=${item.title}>
+                        <div class="item-infos">
+                            <header>
+                                <h4>${item.title}</h4>
+                            </header>
+                            <p class="item-description">${item.description}</p>
+                            <div class="item-nationality">
+                                <i class="fa-solid fa-earth-americas"></i>
+                                <p class="item-country">${item.country}</p>
+                            </div> 
+                        </div>
+                    </article>`;
+    });
     
     //Conversion en chaîne de caractères et insertion dans le DOM.
-    displayMenu = displayMenu.join("");
-    menu.innerHTML = displayMenu;
+    arrayMeals = arrayMeals.join("");
+    menu.innerHTML = arrayMeals;
 
 }
 
@@ -121,11 +119,9 @@ function displayFood(foodItem) {
 function displayButtons(categories) {
     
     //Retourne un tableau contenant les boutons à afficher.
-    let categoriesButtons = categories.map(
-        function(category) {
-            return `<button class="btn-menu-filter" type="button" data-category="${category}">${category}</button>`;
-        }
-    );
+    let categoriesButtons = categories.map(function(category) {
+        return `<button class="btn-menu-filter" type="button" data-category="${category}">${category}</button>`;
+    });
     
     //Conversion en chaîne de caractères et insertion dans le DOM.
     categoriesButtons = categoriesButtons.join("");
