@@ -56,6 +56,12 @@ nav {
     margin-left: 15px;
     border: 2px solid var(--brown);
     border-radius: var(--radiusImg);
+    background-color: transparent;
+    color: var(--black);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
 }
 
 .hamburger {
@@ -75,13 +81,14 @@ nav {
 /*Responsive design*/
 /*******************/
 
-/*Grands écrans (avec souris)*/
-@media only screen and (min-width: 1025px) {
+/*Grandes tablettes et écrans larges*/
+@media only screen and (min-width: 769px) {
 
     /*Pour l'animation*/
     .nav-links .nav-cta-button {
         position: relative;
         overflow: hidden;
+        background-color: var(--lightYellow);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
 
@@ -124,15 +131,6 @@ nav {
 
 }
 
-/*Grandes tablettes et écrans larges*/
-@media only screen and (min-width: 769px) {
-
-    .nav-links .nav-cta-button {
-        background-color: var(--lightYellow);
-    }
-
-}
-
 /*Tablettes et smartphones*/
 @media only screen and (max-width: 768px) {
 
@@ -159,14 +157,13 @@ nav {
         flex-basis: 100%;
     }
 
-    .nav-links a {
+    .nav-links a,
+    .nav-links .nav-cta-button {
         text-align: center;
         font-size: 1.2rem;
-    }
-
-    .nav-links .nav-cta-button {
         border: none;
         margin: 0;
+        width: 100%;
     }
 
 }
