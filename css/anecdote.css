@@ -85,10 +85,6 @@
 }
 
 /*SWIPER*/
-* {
-    /*Important pour Swiper*/
-    box-sizing: border-box;
-}
 
 .slider-wrapper .swiper-pagination-bullet {
     background-color: var(--yellow);

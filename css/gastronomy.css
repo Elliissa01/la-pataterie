@@ -76,9 +76,6 @@
     align-items: center;
     gap: 5px;
     margin-top: 10px;
-    font-family: var(--font-2);
-    font-weight: 100;
-    font-size: 0.95rem;
 }
 
 .item-nationality i {
@@ -87,6 +84,9 @@
 
 .item-country {
     margin: 0;
+    font-family: var(--font-2);
+    font-weight: 100;
+    font-size: 0.95rem;
 }
 
 /*******************/

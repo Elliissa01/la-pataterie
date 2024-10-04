@@ -21,11 +21,14 @@
 
 * {
     margin: 0;
+    padding: 0;
+    font-family: var(--font-1);
+    /*Important pour Swiper*/
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--white);
-    font-family: var(--font-1);
     color: var(--black);
 }
 
